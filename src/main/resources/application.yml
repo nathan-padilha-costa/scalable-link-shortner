@@ -1,0 +1,14 @@
+spring:
+  application:
+    name : high-scale-url-shortener
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/linkdb 
+    username: ${DB_USERNAME:postgres} 
+    password: ${DB_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    
